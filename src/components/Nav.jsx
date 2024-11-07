@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <div className="general flex justify-between p-3 mx-10 items-center">
   
-      <Link to="/home" className="logo-flex flex items-center">
+      <Link to="/" className="logo-flex flex items-center">
         <img src={logo} alt="Logo" className="h-6 w-6" />
         <h1 className="font-semibold text-slate-800 ml-2 hover:text-purple-700">
           Provee<span className="text-purple-700 hover:text-slate-800">Dev</span>
@@ -22,7 +22,7 @@ const Nav = () => {
 
       
       <div className="hidden lg:flex gap-10 absolute left-1/2 transform -translate-x-1/2">
-        <Link to="/home" className={`${isActive('/home')}`}>Home</Link>
+        <Link to="/" className={`${isActive('/')}`}>Home</Link>
         <Link to="/portfolio" className={`${isActive('/portfolio')}`}>Portfolio</Link>
         <Link to="/about" className={`${isActive('/about')}`}>About Me</Link>
         <Link to="/testimonial" className={`${isActive('/testimonial')}`}>Testimonials</Link>
@@ -56,7 +56,7 @@ const Nav = () => {
         
       
         <nav className="flex flex-col gap-5">
-          <Link to="/home" onClick={() => setMenuOpen(false)} className={`${isActive('/home')}`}>Home</Link>
+          <Link to="/" onClick={() => setMenuOpen(false)} className={`${isActive('/')}`}>Home</Link>
           <Link to="/portfolio" onClick={() => setMenuOpen(false)} className={`${isActive('/portfolio')}`}>Portfolio</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className={`${isActive('/about')}`}>About Me</Link>
           <Link to="/testimonial" onClick={() => setMenuOpen(false)} className={`${isActive('/testimonial')}`}>Testimonials</Link>
