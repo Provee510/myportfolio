@@ -23,14 +23,14 @@ const Nav = () => {
       
       <div className="hidden lg:flex gap-10 absolute left-1/2 transform -translate-x-1/2">
         <Link to="/" className={`${isActive('/')}`}>Home</Link>
-        <Link to="/portfolio" className={`${isActive('/portfolio')}`}>Portfolio</Link>
-        <Link to="/about" className={`${isActive('/about')}`}>About Me</Link>
-        <Link to="/testimonial" className={`${isActive('/testimonial')}`}>Testimonials</Link>
+        <Link to="/Portfolio" className={`${isActive('/Portfolio')}`}>Portfolio</Link>
+        <Link to="/About" className={`${isActive('/About')}`}>About Me</Link>
+        <Link to="/Testimonial" className={`${isActive('/Testimonial')}`}>Testimonials</Link>
       </div>
 
       
       <div className="contact-me w-32 p-3 flex items-center justify-center border border-purple-800 rounded-md hidden lg:flex hover:bg-purple-700 hover:text-red-100">
-        <Link to="/contact-me" className="text-purple-950 hover:text-white">Contact me</Link>
+        <Link to="/ContactMe" className="text-purple-950 hover:text-white">Contact me</Link>
       </div>
 
       {/* Hamburger Icon for small screens */}
@@ -57,11 +57,11 @@ const Nav = () => {
       
         <nav className="flex flex-col gap-5">
           <Link to="/" onClick={() => setMenuOpen(false)} className={`${isActive('/')}`}>Home</Link>
-          <Link to="/portfolio" onClick={() => setMenuOpen(false)} className={`${isActive('/portfolio')}`}>Portfolio</Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)} className={`${isActive('/about')}`}>About Me</Link>
-          <Link to="/testimonial" onClick={() => setMenuOpen(false)} className={`${isActive('/testimonial')}`}>Testimonials</Link>
+          <Link to="/Portfolio" onClick={() => setMenuOpen(false)} className={`${isActive('/Portfolio')}`}>Portfolio</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)} className={`${isActive('/About')}`}>About Me</Link>
+          <Link to="/Testimonial" onClick={() => setMenuOpen(false)} className={`${isActive('/Testimonial')}`}>Testimonials</Link>
           <div className="contact-me w-full p-3 flex items-center justify-center border border-slate-500 rounded-md mt-4">
-            <Link to="/contact-me" onClick={() => setMenuOpen(false)} className="text-slate-900">Contact me</Link>
+            <Link to="/ContactMe" onClick={() => setMenuOpen(false)} className="text-slate-900">Contact me</Link>
           </div>
         </nav>
       </div>
