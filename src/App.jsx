@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Header from './components/Header';
-import MySkill from './components/MySkill';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Testimonial from './components/Testimonial';
-import ContactMe from './components/ContactMe';
+import header from './components/Header';
+import myskill from './components/MySkill';
+import about from './components/About';
+import portfolio from './components/Portfolio';
+import testimonial from './components/Testimonial';
+import contactme from './components/ContactMe';
 import Footer from './components/Footer';
-import Home from './pages/Home';
+import home from './pages/Home';
 
 const App = () => {
   return (
